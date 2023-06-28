@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <style>
+    body {
+      box-sizing: border-box;
+      margin: 0;
+      height: 100vh;
+      font-family: Roboto, Arial;
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      background-color: #f1f1f1;
+    }
+
+    h1 {
+      margin: 0;
+      padding-bottom: 35px;
+    }
+
+    .calculator {
+      box-shadow: 30px 70px 80px rgba(0, 0, 0, 0.15);
+      padding: 45px 40px 45px;
+      border-radius: 80px;
+      flex: 1 0 200px;
+      margin: 0 50px 0;
+      background-color: white;
+    }
+
+    button {
+      width: 100px;
+      border: none;
+      padding: 25px;
+      border-radius: 20px;
+      font-size: 40px;
+      font-weight: 400;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: black;
+      color: white;
+      font-weight: 700;
+      transition: background-color 0.4s;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 10px;
+      gap: 10px;
+    }
+
+    .equal-button {
+      background-color: rgb(255, 166, 0);
+    }
+
+    .equal-button:hover {
+      background-color: black;
+      color: orange;
+    }
+
+    .clear-button {
+      width: 100%;
+    }
+
+  </style>
+
+</head>
+<body>
+  <main>
+    <div class="centering">
+      <div class="calculator">
+        <h1>Calculator</h1>
+        <section class="buttons">
+          <div class="row">
+            <button onclick="
+              calculation += '1';
+              console.log(calculation);
+            ">1</button>
+        
+            <button onclick="
+              calculation += '2';
+              console.log(calculation);
+            ">2</button>
+          
+            <button onclick="
+              calculation += '3';
+              console.log(calculation);
+            ">3</button>
+  
+            <button onclick="
+              calculation += '+';
+              console.log(calculation);
+            ">+</button>
+          </div>
+  
+          <div class="row">
+            <button onclick="
+              calculation += '4';
+              console.log(calculation);
+            ">4</button>
+  
+            <button onclick="
+              calculation += '5';
+              console.log(calculation);
+            ">5</button>
+  
+            <button onclick="
+              calculation += '3';
+              console.log(calculation);
+            ">6</button>
+  
+            <button onclick="
+              calculation += '-';
+              console.log(calculation);
+            ">-</button>
+          </div> 
+  
+          <div class="row">
+            <button onclick="
+              calculation += '7';
+              console.log(calculation);
+            ">7</button>
+  
+            <button onclick="
+              calculation += '8';
+              console.log(calculation);
+            ">8</button>
+  
+            <button onclick="
+              calculation += '9';
+              console.log(calculation);
+            ">9</button>
+  
+            <button onclick="
+              calculation += '*';
+              console.log(calculation);
+            ">*</button>
+          </div>
+  
+          <div class="row">
+            <button onclick="
+              calculation += '0';
+              console.log(calculation);
+            ">0</button>
+  
+            <button onclick="
+              calculation += '.';
+              console.log(calculation);
+            ">.</button>
+          
+            <button class="equal-button" onclick="
+              calculation = eval(calculation);
+              console.log(calculation);
+            ">=</button>
+  
+            <button onclick="
+              calculation += '/';
+              console.log(calculation);
+            ">/</button>
+          </div>
+          
+          <div class="clear">
+            <button class="clear-button" onclick="
+              calculation = '';
+              console.log('Cleared');
+          ">CE</button>
+          </div>
+  
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    let calculation = '';
+
+
+  </script>
+</body>
+</html>
